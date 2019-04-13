@@ -1,6 +1,6 @@
 --[[
 	
-	Copyright 2019 Nyapaw ©
+	Copyright 2019 Nyapaw Â©
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@
 	
 	
 	MergeSort.Sort(<Table> Array)
-		Sorts the array lexigraphically (string) or numerically (number) from least to greatest.
+		Sorts the array lexicographically (string) or numerically (number) from least to greatest.
 		
 	MergeSort.Sort(<Table> Array, [<Callback>])
 		Sorts the array with a callback; given two parameters, the function must return a boolean from comparing one to the other.
