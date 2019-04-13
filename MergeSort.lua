@@ -22,7 +22,7 @@
 	MergeSort.Sort(<Table> Array)
 		Sorts the array lexicographically (string) or numerically (number) from least to greatest.
 		
-	MergeSort.Sort(<Table> Array, [<Callback>])
+	MergeSort.Sort(<Table> Array, [<Callback> SortingFunction])
 		Sorts the array with a callback; given two parameters, the function must return a boolean from comparing one to the other.
 		Sorts in chronological order if first is greater than second, reverse vise-versa.
 	
