@@ -24,6 +24,7 @@
 		
 	MergeSort.Sort(<Table> Array, [<Callback>])
 		Sorts the array with a callback; given two parameters, the function must return a boolean from comparing one to the other.
+		Sorts in chronological order if first is greater than second, reverse vise-versa.
 	
 	
 	
