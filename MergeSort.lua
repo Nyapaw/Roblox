@@ -1,6 +1,6 @@
 --[[
 	
-	Copyright 2019 Nyapaw ©
+	Copyright 2019 Nyapaw Â©
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -34,12 +34,12 @@ local MergeSort = {};
 local function Merge(refArray, Array, lowerHalf, upperHalf, Callback)
     local lC, rC = 1, 1;
     
-	--// Note that these functions aren't used to save lines of code, it makes unnecessary calls.
-	--// https://devforum.roblox.com/t/why-i-dont-sleep-micro-macro-optimizing-mega-guide/71543
+    --// Note that these functions aren't used to save lines of code, it makes unnecessary calls.
+    --// https://devforum.roblox.com/t/why-i-dont-sleep-micro-macro-optimizing-mega-guide/71543
 	
-	--[[
+    --[[
 		
-	local function add_rC()
+    local function add_rC()
         table.insert(Array, upperHalf[rC]);
         rC = rC + 1;
     end;
@@ -49,7 +49,7 @@ local function Merge(refArray, Array, lowerHalf, upperHalf, Callback)
         lC = lC + 1;
     end;
 
-	]]
+    ]]
 
     while ((lC + rC) < (#lowerHalf + #upperHalf + 2)) do
         if (rC > #upperHalf) then
