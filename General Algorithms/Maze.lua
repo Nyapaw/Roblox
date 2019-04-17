@@ -21,6 +21,8 @@
 	
 	-------
 	
+	[!] This script needs the 'Cell' ModuleScript parented in it in order to work! [!]
+	
 	API:
 	
 	Maze.new(<Int> sizeX, <Int> sizeY)
