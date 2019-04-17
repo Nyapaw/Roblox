@@ -31,7 +31,7 @@
 		Creates a new maze with sizeX (# of rows) and sizeY (# of columns).
 		
 	Maze:init()
-		Returns: void	
+		Returns: <void>
 		---
 		Calls the generation algorithm on the maze. You must run this in order to have an actual maze object.
 		
