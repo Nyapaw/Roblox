@@ -103,7 +103,7 @@ function FE.waitForRemote(Type, Name, Timeout)
 	assert(Name		and typeof(Name) == 'string', 
 		'Did you forget to pass a string Name?'			);
 
-	Timeout = Timeout and Timeout or 10;
+	Timeout = Timeout or 10;
 	
 	local ElapsedTime = 0;
 	local ofType = formatKeyword(Type);
