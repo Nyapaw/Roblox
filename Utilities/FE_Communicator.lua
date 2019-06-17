@@ -35,8 +35,7 @@
 				
 		FE.waitForRemote(<String> Type, <String> Name, [Number: 10] Timeout)	
 			return: Remote instance if exist, or nil if surpassed timeout
-			> You can treat the remote instance as a boolean (on the client for example) 
-			  and listening to it if it returns the instance
+			> Waits for given remote instance to exist for reference
 			
 		FE.fireAllClients(<String> Name, <Variant> Args ...)
 			return: nil
