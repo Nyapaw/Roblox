@@ -17,10 +17,6 @@
 	
 	-------
 	
-	(Note: 	Insertion Sort is a generally slower algorithm compared to other algorithms like Merge Sort and Quicksort. 
-			However, it manages memory better than Merge Sort.)
-	
-	
 	InsertionSort.Sort(<Table> Array)
 		Sorts the array lexicographically (string) or numerically (number) from least to greatest.
 		
