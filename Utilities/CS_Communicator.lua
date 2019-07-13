@@ -165,12 +165,18 @@ function FE.request(Type, Name, ...)
 	assert(Remote,
 		('Requested to %s but no remote was available on the client'):format(Name)
 	);
-	
-	return (Server) and (ofType == 'RemoteFunction' and Remote:InvokeClient(...)
-					or	Remote:FireClient(...))
-			or
-						(ofType == 'RemoteFunction' and Remote:InvokeServer(...)
-					or	Remote:FireServer(...));
+		
+	if (Server) then
+		if (ofType == 'RemoteFunction') then 
+			return Remote:InvokeClient(...);
+		end;
+		Remote:FireClient(...);
+	else
+		if (ofType == 'RemoteFunction') then 
+			return Remote:InvokeServer(...);
+		end;
+		Remote:FireServer(...);
+	end;
 end;
 
 function FE.fireAllClients(Name, ...)
