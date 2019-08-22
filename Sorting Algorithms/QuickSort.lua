@@ -1,5 +1,3 @@
--- LR pointers
-
 local quick = {};
 
 local function partition(arr, low, high, callback)
