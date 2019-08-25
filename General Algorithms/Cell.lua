@@ -21,9 +21,7 @@ Cell.__index = Cell;
 
 local oppDir = {W = 'E', E = 'W', S = 'N', N = 'S'};
 
-Cell.new = function(x, y, mazeInfo)
-	local mX, mY = mazeInfo.x, mazeInfo.y;
-	
+Cell.new = function(x, y)
 	local Self = {};
 	
 	Self.x = x;
