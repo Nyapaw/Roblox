@@ -76,7 +76,7 @@ Maze.new = function(sizeX, sizeY)
 	for X = 1, sizeX do
 		Self.Map[X] = {};
 		for Y = 1, sizeY do
-			Self.Map[X][Y] = Cell.new(X, Y, mazeInfo);
+			Self.Map[X][Y] = Cell.new(X, Y);
 		end;
 	end;
 	
