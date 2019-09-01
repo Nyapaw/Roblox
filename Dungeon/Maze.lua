@@ -77,7 +77,7 @@ function Maze.Search(oMaze, origCell)
 	
 	local cPath;
 		
-	local function Search(tCell, Path) -- tCell: currentCell
+	local function Search(tCell, Path)
 		if (tCell.isRoom) then
 			if (tCell.outRef ~= origCell.outRef) then
 				return;
