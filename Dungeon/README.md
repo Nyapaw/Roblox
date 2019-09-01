@@ -7,4 +7,5 @@ API:
 (You can change settings in Settings.lua)
 
 **Dungeon.new(int X, int Y)** - Makes a new dungeon. Returns <Dungeon> with non initialized cells.
-Dungeon:init() - Run the dungeon algorithm
+  
+**Dungeon:init()** - Run the dungeon algorithm
