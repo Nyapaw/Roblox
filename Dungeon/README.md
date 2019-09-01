@@ -9,3 +9,6 @@ API:
 **Dungeon.new(int X, int Y)** - Makes a new dungeon. Returns <Dungeon> with non initialized cells.
   
 **Dungeon:init()** - Run the dungeon algorithm
+
+I also included a .rbxl file of the examples shown here with the 3D cells.
+https://devforum.roblox.com/t/dungeon-generation-a-procedural-generation-guide/342413/1
