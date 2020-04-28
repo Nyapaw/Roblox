@@ -106,7 +106,7 @@ function Maze.Search(oMaze, origCell)
 				
 		if (not cPath) then
 			for _, v in next, Neighbors do	
-				if ((not v.Cell.Filled or v.isPath)) then 
+				if (not v.Cell.Filled) then 
 					Search(v.Cell, table.shallow(Path));
 				end;
 			end;
