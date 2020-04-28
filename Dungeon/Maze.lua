@@ -106,7 +106,7 @@ function Maze.Search(oMaze, origCell)
 				
 		if (not cPath) then
 			for _, v in next, Neighbors do	
-				if (not v.Cell.Filled) then 
+				if ((not v.Cell.Filled or v.isPath)) then 
 					Search(v.Cell, table.shallow(Path));
 				end;
 			end;
@@ -115,6 +115,7 @@ function Maze.Search(oMaze, origCell)
 	
 	local look = origCell.Door;
 	local lookCell = origCell:getCellOfDirection(oMaze.Map, look);
+	lookCell.isMaze = true;
 	
 	Search(lookCell, {origCell});
 	
