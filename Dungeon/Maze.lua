@@ -115,7 +115,6 @@ function Maze.Search(oMaze, origCell)
 	
 	local look = origCell.Door;
 	local lookCell = origCell:getCellOfDirection(oMaze.Map, look);
-	lookCell.isMaze = true;
 	
 	Search(lookCell, {origCell});
 	
